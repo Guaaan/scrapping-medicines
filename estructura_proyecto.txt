@@ -1,0 +1,107 @@
+.
+├── cuenta.py
+├── estructura_proyecto.txt
+├── estructura_proyecto.txt~
+├── guardar
+│   ├── connect.py
+│   ├── insert_ahumada.bat
+│   ├── insert_ahumada.py
+│   ├── insert_all.py
+│   ├── insert_cruzverde.py
+│   ├── insert_eco.bat
+│   ├── insert_eco.py
+│   ├── insert_farmex.bat
+│   ├── insert_farmex.py
+│   ├── insert_salcobrand.bat
+│   ├── insert_salcobrand.py
+│   ├── insert_simi.bat
+│   ├── insert_simi.py
+│   ├── __pycache__
+│   │   ├── connect.cpython-310.pyc
+│   │   ├── insert_ahumada.cpython-310.pyc
+│   │   ├── insert_cruzverde.cpython-310.pyc
+│   │   └── insert_salcobrand.cpython-310.pyc
+│   └── recolector_precios_mercado.bat
+├── obtener
+│   ├── ahumada.py
+│   ├── Aitems.json
+│   ├── aLinks.json
+│   ├── api.json
+│   ├── Citemsapi.json
+│   ├── Citems.json
+│   ├── cLinks.json
+│   ├── cruzcookie.py
+│   ├── cruz_links.json
+│   ├── cruz_links.py
+│   ├── detailedahumada.py
+│   ├── detailedcruzverde.py
+│   ├── detailedeco.py
+│   ├── detailedfarmex.py
+│   ├── detailedsimi.py
+│   ├── eco.py
+│   ├── Eitems.json
+│   ├── eLinks.json
+│   ├── farmex_collection.py
+│   ├── farmex.py
+│   ├── fcollections.json
+│   ├── Fitems.json
+│   ├── fLinks.json
+│   ├── itemsahumada.bat
+│   ├── obtain_ahumada.bat
+│   ├── obtain.bat
+│   ├── obtain_eco.bat
+│   ├── obtain_farmex.bat
+│   ├── obtain_itemsahumada.bat
+│   ├── obtain_itemseco.bat
+│   ├── obtain_itemsfarmex.bat
+│   ├── obtain_salcobrand.bat
+│   ├── obtener.py
+│   ├── salcobrand.py
+│   ├── simiLinks.json
+│   ├── simi.py
+│   ├── Sitems.json
+│   ├── skus1.csv
+│   ├── skus1.numbers
+│   ├── skus2.csv
+│   ├── skus2.numbers
+│   ├── sLinks.json
+│   ├── testbs4.py
+│   ├── test.js
+│   └── test.py
+├── outputs
+│   ├── Aitems.json
+│   ├── bioequivalentes.json
+│   ├── Citems.json
+│   ├── dispositivos.json
+│   ├── Ditems.json
+│   ├── Eitems.json
+│   ├── Fitems.json
+│   ├── itemsSimi.json
+│   ├── medicamento.json
+│   ├── salud_femenina.json
+│   ├── Sitems.json
+│   └── suplementos.json
+├── README.md
+├── requirements.txt
+└── spiders
+    ├── ahumada.py
+    ├── clinks.json
+    ├── cruz_verde.py
+    ├── dr_simi.py
+    ├── eco.py
+    ├── obtain_ahumada.bat
+    ├── obtain_eco.bat
+    ├── obtain_salcobrand.bat
+    ├── obtain_simi.bat
+    ├── __pycache__
+    │   └── cruz_verde.cpython-310.pyc
+    ├── resultado.json
+    ├── salcobrand.py
+    ├── simi_bioequivalentes.py
+    ├── simi_dispositivos.py
+    ├── simi_medicamento.py
+    ├── simi__new.py
+    ├── simi_salud_femenina.py
+    └── simi_suplementos.py
+
+6 directories, 98 files
