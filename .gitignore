@@ -1,0 +1,12 @@
+# Ignorar archivos .json generados por Scrapy
+
+
+# Ignorar archivos y directorios generados por Python
+__pycache__/
+*.py[cod]
+*.json
+
+# Ignorar el entorno virtual de Python (si se usa)
+venv/
+
+.DS_Store
