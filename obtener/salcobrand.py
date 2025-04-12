@@ -7,29 +7,7 @@ from datetime import datetime
 
 archivo = 'Articulos Salcobrand'
 
-def envio():
-    url_notif = "https://api.cdr.cl/notificar/v0.1?topico=recolector.inicio.ejecucion"
-
-    payload = json.dumps({
-    "farmacia": f"Parte 1 recolectando: {archivo}"
-    })
-    headers = {
-      'Content-Type': 'application/json'
-    }
-
-    response = requests.request("POST", url_notif, headers=headers, data=payload)
-
-def termino():
-    url = "https://api.cdr.cl/notificar/v0.1?topico=recolector.termino.ejecucion"
-
-    payload = json.dumps({
-    "farmacia": f"Parte 1 recolectando: {archivo}"
-    })
-    headers = {
-      'Content-Type': 'application/json'
-    }
-    response = requests.request("POST", url, headers=headers, data=payload)
-    
+d
 def error():
     url = "https://api.cdr.cl/notificar/v0.1?topico=recolector.error.ejecucion"
 
@@ -50,7 +28,7 @@ def string_to_int(s):
     except:
         return
     
-envio()
+
 categories = ['Medicamentos',
             'Adulto%20Mayor',
             'Cuidado%20de%20la%20Salud',
@@ -150,4 +128,3 @@ except Exception as Argument:
 finally:
     print(f'resultados salcobrand {str(len(res))}')
     
-    termino()

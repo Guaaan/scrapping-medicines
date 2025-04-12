@@ -10,29 +10,7 @@ from bs4 import BeautifulSoup
 
 archivo = 'Articulos Ahumada'
 
-def envio():
-    url_notif = "https://api.cdr.cl/notificar/v0.1?topico=recolector.inicio.ejecucion"
 
-    payload = json.dumps({
-    "farmacia": f"Parte 2 recolectando: {archivo}"
-    })
-    headers = {
-      'Content-Type': 'application/json'
-    }
-
-    response = requests.request("POST", url_notif, headers=headers, data=payload)
-
-def termino():
-    url = "https://api.cdr.cl/notificar/v0.1?topico=recolector.termino.ejecucion"
-
-    payload = json.dumps({
-    "farmacia": f"Parte 2 recolectando: {archivo}"
-    })
-    headers = {
-      'Content-Type': 'application/json'
-    }
-    response = requests.request("POST", url, headers=headers, data=payload)
-    
 def error():
     url = "https://api.cdr.cl/notificar/v0.1?topico=recolector.error.ejecucion"
 
@@ -47,7 +25,6 @@ def error():
     response = requests.request("POST", url, headers=headers, data=payload)
     
 
-# envio()
 
 links = []
 f = open('aLinks.json')
@@ -104,4 +81,3 @@ except Exception as Argument:
     f.close()  
     error()
     
-termino()

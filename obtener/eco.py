@@ -6,29 +6,7 @@ import json
 
 archivo = 'links eco'
 
-def envio():
-    url_notif = "https://api.cdr.cl/notificar/v0.1?topico=recolector.inicio.ejecucion"
 
-    payload = json.dumps({
-    "farmacia": f"Parte 1 recolectando: {archivo}"
-    })
-    headers = {
-      'Content-Type': 'application/json'
-    }
-
-    response = requests.request("POST", url_notif, headers=headers, data=payload)
-
-def termino():
-    url = "https://api.cdr.cl/notificar/v0.1?topico=recolector.termino.ejecucion"
-
-    payload = json.dumps({
-    "farmacia": f"Parte 1 recolectando: {archivo}"
-    })
-    headers = {
-      'Content-Type': 'application/json'
-    }
-    response = requests.request("POST", url, headers=headers, data=payload)
-    
 def error():
     url = "https://api.cdr.cl/notificar/v0.1?topico=recolector.error.ejecucion"
 

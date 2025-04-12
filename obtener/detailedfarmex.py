@@ -8,29 +8,7 @@ from scrapy.selector import Selector
 from urllib.parse import urlparse
 
 archivo = 'items farmex'
-def envio():
-    url_notif = "https://api.cdr.cl/notificar/v0.1?topico=recolector.inicio.ejecucion"
 
-    payload = json.dumps({
-    "farmacia": f"Parte 2 recolectando: {archivo}"
-    })
-    headers = {
-      'Content-Type': 'application/json'
-    }
-
-    response = requests.request("POST", url_notif, headers=headers, data=payload)
-
-def termino():
-    url = "https://api.cdr.cl/notificar/v0.1?topico=recolector.termino.ejecucion"
-
-    payload = json.dumps({
-    "farmacia": f"Parte 2 recolectando: {archivo}"
-    })
-    headers = {
-      'Content-Type': 'application/json'
-    }
-    response = requests.request("POST", url, headers=headers, data=payload)
-    
 def error():
     url = "https://api.cdr.cl/notificar/v0.1?topico=recolector.error.ejecucion"
 
@@ -43,7 +21,6 @@ def error():
     }
     response = requests.request("POST", url, headers=headers, data=payload)
 
-envio()
 links = []
 f = open('fLinks.json')
 data = json.load(f)
@@ -123,4 +100,3 @@ except Exception as Argument:
     f.close()  
     error()
     
-termino()
