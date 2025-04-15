@@ -37,7 +37,7 @@ class FarmaciasAhumadaCrawler(CrawlSpider):
 
     allowed_domains = ['farmaciasahumada.cl']
 
-    start_urls = ['https://www.farmaciasahumada.cl/medicamentos-3',
+    start_urls = ['https://www.farmaciasahumada.cl/on/demandware.store/Sites-ahumada-cl-Site/default/Search-UpdateGrid?cgid=medicamentos&start=12&sz=12','https://www.farmaciasahumada.cl/medicamentos',
                   'https://www.farmaciasahumada.cl/bebidas-y-alimentos.html',
                   'https://www.farmaciasahumada.cl/dispositivos-medicos.html', 'https://www.farmaciasahumada.cl/cronicos.html',
                   'https://www.farmaciasahumada.cl/infantil-y-maternidad/lactancia-y-alimentacion.html', 'https://www.farmaciasahumada.cl/nutricion-deportiva.html',
@@ -49,7 +49,7 @@ class FarmaciasAhumadaCrawler(CrawlSpider):
     rules = (
         # paginación
         Rule(LinkExtractor(
-            restrict_css='a.btn.btn-primary.col-8.col-sm-4.more'), follow=True),
+            restrict_css='button.btn.btn-primary.col-8.col-sm-4.more',attrs=['data-url']),follow=True),
         # detalle productos
         Rule(LinkExtractor(restrict_css='a.link'),
              follow=True,
