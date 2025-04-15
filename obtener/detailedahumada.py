@@ -67,7 +67,7 @@ process = CrawlerProcess(settings = {
     'FEED_FORMAT': 'json',
 })
 
-with open('../outputs/Aitems.json', 'w') as f:
+with open('Aitems.json', 'w') as f:
     f.write('')
 try:
     process.crawl(DetailedahumadaSpider)
