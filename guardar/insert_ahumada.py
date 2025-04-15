@@ -88,7 +88,7 @@ except Exception as Argument:
     print(Argument)
     
     print(item)
-    # f = open(f"../logs/{datetime.datetime.now().strftime('%Y-%m-%d')}.txt", "a")
+    # f = open(f"../../logs/{datetime.datetime.now().strftime('%Y-%m-%d')}.txt", "a")
     # # writing in the file
     # f.write(str(Argument))
     # f.write(item)

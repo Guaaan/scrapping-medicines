@@ -10,6 +10,7 @@ from urllib.parse import urlparse
 import re
 
 with sync_playwright() as p:
+    name = 'cruz_verde'
     browser = p.chromium.launch(headless=True, slow_mo=0)
     context = browser.new_context()
     page = context.new_page()

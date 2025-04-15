@@ -3,8 +3,8 @@
 # Configuración básica del bot
 BOT_NAME = 'scrapping_medicines'
 
-SPIDER_MODULES = ['scrapping_medicines.spiders']
-NEWSPIDER_MODULE = 'scrapping_medicines.spiders'
+# SPIDER_MODULES = ['scrapping_medicines.spiders']
+# NEWSPIDER_MODULE = 'scrapping_medicines.spiders'
 
 # Obedecer robots.txt (mejor desactivar para scraping de prueba)
 ROBOTSTXT_OBEY = False  # True = respeta reglas, False = ignora

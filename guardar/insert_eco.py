@@ -124,7 +124,7 @@ except Exception as e:
     print(e.args)
     print(item)
     f = open(
-        f"../logs/{datetime.datetime.now().strftime('%Y-%m-%d')}.txt", "a")
+        f"../../logs/{datetime.datetime.now().strftime('%Y-%m-%d')}.txt", "a")
     # writing in the file
     # f.write(str(Argument))
     # f.write(item)

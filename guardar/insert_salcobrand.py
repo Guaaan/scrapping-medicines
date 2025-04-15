@@ -101,7 +101,7 @@ try:
 except Exception as Argument:
     print('Error mientras se insertaban datos de salcobrand a la base de datos')
     print(str(Argument))
-    f = open(f"../logs/{datetime.datetime.now().strftime('%Y-%m-%d')}.txt", "a")
+    f = open(f"../../logs/{datetime.datetime.now().strftime('%Y-%m-%d')}.txt", "a")
     # writing in the file
     f.write(str(Argument))
     # closing the file
